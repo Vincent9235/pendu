@@ -1,23 +1,16 @@
-import logo from './logo.svg';
 import './App.css';
+import './components/icon';
+import Content from './components/content/content';
+import ThemeContextProvider from './Context/themeContext';
+import BtnView from './components/btnView/btnView';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <ThemeContextProvider>
+        <BtnView />
+        <Content />
+      </ThemeContextProvider>
     </div>
   );
 }
