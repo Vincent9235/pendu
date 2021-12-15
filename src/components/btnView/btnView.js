@@ -8,9 +8,9 @@ export default function BtnView() {
     return (
         <div
             onClick={toggleTheme}
-            className={theme ? 'btn-toggle light': 'btn-toggle dark'}
-            >
-                {theme ? "🌙" : "☀️"}
+            className={theme ? 'btn-toggle light' : 'btn-toggle dark'}
+        >
+            {theme ? "🌙" : "☀️"}
         </div>
     )
 }
